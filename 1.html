@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./1.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="form">
+    <section>
+      <label for="producto">Nombre del Producto</label>
+      <input type="text" name="producto" id="text" placeholder="Nombre del Producto">
+    </section>
+    <section>
+      <label for="precio">Precio Unitario</label>
+      <input type="number" name="precio" id="text-precio" placeholder="Precio Unitario">
+    </section>
+    <section>
+      <label for="unidades">Unidades</label>
+      <input type="number" name="unidades" id="text-unidades" placeholder="Unidades">
+      <button id="agregar" type="button" onclick="insertarFila(),sumUnidades(),sumTotal(),resetearForm()"
+        value="insertar fila">agregar</button>
+    </section>
+  </form>
+  <div class="tablas">
+    <table id="tblDatos">
+      <thead>
+        <tr>
+          <th>Nombre Producto</th>
+          <th>Precio Unitario</th>
+          <th>Unidades</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <td>-</td>
+          <td id="unidades"></td>
+          <td id="total"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+
+</html>
