@@ -42,3 +42,7 @@ function sumTotal() {
 function resetearForm() {
 	form.reset();
 }
+
+function preventDefault(e) {
+	e.preventDefault();
+}
